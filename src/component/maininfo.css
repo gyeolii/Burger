@@ -1,0 +1,11 @@
+.maininfo{
+  margin: 50px;
+  font-family: KOTRA;
+}
+
+@font-face{
+font-family: "KOTRA";
+src: url('../component/KOTRA_BOLD.ttf');
+}
+
+
