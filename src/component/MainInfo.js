@@ -1,5 +1,5 @@
 import { Card, CardGroup } from 'react-bootstrap';
-import './maininfo.css';
+import './component.css';
 
 function MainInfo(App) {
   return (

@@ -8,4 +8,9 @@ font-family: "KOTRA";
 src: url('../component/KOTRA_BOLD.ttf');
 }
 
+@font-face{
+font-family: "SLEI";
+src: url('../component/SLEIGothicTTF.ttf');
+}
+
 
