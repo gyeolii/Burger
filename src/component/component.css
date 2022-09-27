@@ -1,16 +1,95 @@
+  /* MainInfo */
 .maininfo{
   margin: 50px;
   font-family: KOTRA;
 }
 
+/* BurgerDetail */
+.before{
+  float: left;
+  margin-top: 235px ;
+  margin-left: 50px;
+  padding: 10px;
+  background-color: #ffbc0d;
+  border-radius: 110px;
+  min-width: 65px;
+  border: none;
+  font-size: 30px;
+}
+
+.after{
+  float : right ;
+  margin-top: 235px;
+  margin-right: 50px;
+  padding: 10px;
+  background-color: #ffbc0d;
+  border-radius: 110px;
+  min-width: 65px;
+  border: none;
+  font-size: 30px;
+}
+
+.detailTilte{
+  font-family: SUIT-ExtraBold;
+  text-align: center;
+}
+.detailText{
+  font-family: SUIT-Variable;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.bgPlace, .bgAllergy{
+    white-space: pre-wrap;
+} 
+
+.otherInfo{
+  padding: 100px;
+  font-family: SUIT-Variable;
+}
+
+.otherInfoName{
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.otherInfoButton {
+  float : right;
+  font-size: 30px;
+  background-color: white;
+  border: none;
+  font-family: SUIT-Variable;
+}
+
+table{
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing:0 ;
+  table-layout: fixed;
+}
+thead{
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+tbody{
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+/* 폰트 */
 @font-face{
 font-family: "KOTRA";
 src: url('../component/KOTRA_BOLD.ttf');
 }
 
 @font-face{
-font-family: "SLEI";
-src: url('../component/SLEIGothicTTF.ttf');
+font-family: "SUIT-ExtraBold";
+src: url('../component/SUIT-ExtraBold.ttf');
 }
 
-
+@font-face{
+font-family: "SUIT-Variable";
+src: url('../component/SUIT-Variable.ttf');
+}

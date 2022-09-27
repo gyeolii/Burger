@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
 .mainLogo{
   background-image: url('../public/image/logo.png');
   background-repeat: no-repeat;
@@ -6,11 +12,6 @@
   height: 90px;
 }
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding:0;
-}
 /* .main4{
   background-video: url('https://youtu.be/1XDKnRCIFMc');
   height: 500px;
@@ -21,7 +22,7 @@
 } */
 .main1{
   background-image: url('../public/image/메인.png');
-  height: 500px;
+  height: 540px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -29,7 +30,7 @@
 }
 .main2{
   background-image: url('../public/image/메인2.jpg');
-  height: 500px;
+  height: 540px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,20 +38,59 @@
 }
 .main3{
   background-image: url('../public/image/메인3.jpg');
-  height: 500px;
+  height: 540px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2rem;
 }
 .burerTypeMain{
-  background-image: url('C:\workspace_react\burger\public\image\제목 없음1.jpg');
-  height:526px;
-  width: 1122px;
+  background-image: url(C:\workspace_react\burger\public\image\typemain.jpg);
+  height:200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin : 0 auto;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.burerTypeMainTitel{
+  padding-top: 50px;
+  padding-left: 100px;
+  font-family: ROKAF_Bold;
+}
+.burerTypeMainText{
+  padding-top: 10px;
+  padding-left: 105px;
+  letter-spacing: 2px;
+  line-height: 1.7;
+  font-family: ROKAF_Medium;
 }
 
+.footer{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 100%;
+  height: 150px;
+  font-family: SUIT-Variable;
+  font-size: 15px;
+  background-color: #ffbc0d;
+  color: rgb(45, 44, 44);
+  line-height: 2;
+}
+
+@font-face{
+font-family: "ROKAF_Bold";
+src: url('./component/ROKAF Sans Bold.ttf');
+}
+
+@font-face{
+font-family: "ROKAF_Medium";
+src: url('./component/ROKAF Sans Medium.ttf');
+}
+
+@font-face{
+font-family: "SUIT-ExtraBold";
+src: url('./component/SUIT-Variable.ttf');
+}
 
