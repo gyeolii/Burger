@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import './component/MainInfo.css';
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { Carousel, Navbar, Nav, Container, Row, Card } from 'react-bootstrap';
 import BurgerType from './component/BurgerType';
 import MainInfo from './component/MainInfo';
 import BurgerDetail from './component/BurgerDetail'
-
+import ReactPlayer from 'react-player';
 
 function App() {
   let navigate = useNavigate();
@@ -413,34 +414,35 @@ function App() {
     },
   ]);
   return (
-    <div>
-      <div className="main"></div>
-      <Navbar bg="light" variant="light">
-        <Container>
-          <Navbar.Brand href="/" className="mainLogo"></Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link
-              onClick={() => {
-                navigate('/burger');
-              }}>
-              Burger
-            </Nav.Link>
-            <Nav.Link
-              onClick={() => {
-                navigate('/store');
-              }}>
-              Store
-            </Nav.Link>
-            <Nav.Link
-              onClick={() => {
-                navigate('/info');
-              }}>
-              Info
-            </Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-
+    <div className="app">
+      <div className="mainmenu">
+        <div className="main"></div>
+        <Navbar bg="light" variant="light">
+          <Container>
+            <Navbar.Brand href="/" className="mainLogo"></Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link
+                onClick={() => {
+                  navigate('/burger');
+                }}>
+                Burger
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  navigate('/drive');
+                }}>
+                Drive Thru
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  navigate('/delivery');
+                }}>
+                Delivery
+              </Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+      </div>
       <Routes>
         <Route
           path="/"
@@ -448,11 +450,9 @@ function App() {
             <>
               <div>
                 <Carousel className="mainImg">
-                  {/* 메인사진들 */}
                   <Carousel.Item className="main1" />
                   <Carousel.Item className="main2" />
                   <Carousel.Item className="main3" />
-                  {/* <Carousel.Item className="main4" /> */}
                 </Carousel>
               </div>
               <MainInfo />
@@ -486,7 +486,6 @@ function App() {
                   })}
                 </Row>
               </Container>
-              
             </div>
           }
         />
@@ -506,14 +505,102 @@ function App() {
             </div>
           }
         />
-        <Route path="/store" />
-        <Route path="/info" />
+        <Route
+          path="/drive"
+          element={
+            <div>
+              <div className="driveImage">
+                <h1 className="driveTitle">드라이브</h1>
+                <h6 className="driveText">
+                  운전 중에도 24시간 간편하고 빠르게! <br />
+                  차 안에서 주문하고, 차 안에서 바로 받아 <br />
+                  맛있는 햄버거를 즐겨보세요.
+                </h6>
+              </div>
+              <ReactPlayer
+                className="mcDrive"
+                url={'https://youtu.be/BiMkqfVNmnk'}
+                width="900px"
+                heigth="900px"
+                playing={true}
+                muted={true}
+                controls={true}></ReactPlayer>
+            </div>
+          }
+        />
+        <Route
+          path="/delivery"
+          element={
+            <div className="Delivery" style={{ textAlign: 'center' }}>
+              <div className="deliveryImage">
+                <h1 className="deliveryTitle">딜리버리</h1>
+                <p className="deliveryText">우리집에 딜리버리 배달이 되나요?</p>
+              </div>
+              <fieldset className="addr">
+                <input
+                  type="text"
+                  className="input1"
+                  placeholder="주소를 입력해주세요."
+                />
+                <button className="addrFind">주소찾기</button>
+                <br />
+                <input
+                  type="text"
+                  className="input2"
+                  placeholder="상세주소를 입력해주세요."
+                />
+                <br />
+                <input type="text" className="input3" />
+                <span className="input3_1">동</span>
+                <input type="text" className="input4" />
+                <span className="input4_1">호</span>
+                <p className="inputText">
+                  *아파트의 경우 동, 호수를 입력하셔야 정확한 검색이 가능합니다.
+                </p>
+                <button className="search">검색하기</button>
+              </fieldset>
+              <ul className="deliveruInfo">
+                <li>
+                  매장 별 무료 배달 주문 금액 및 소액주문비는 다르게 운영될 수
+                  있으며, <br />
+                  주문 시 결제 페이지에서 미리 확인 하실 수 있습니다.
+                </li>
+                <li>딜리버리 가격은 매장과 상이합니다.</li>
+                <li>
+                  배달 가능 구역 내에서도 기상조건이나 기타 매장의 사정에 따라 배달 서비스 <br />
+                  이용이 어려울 수 있습니다.
+                </li>
+                <li>
+                  주문이 밀리는 시간대에는 배달이 다소 지연될 수 있습니다.
+                  <br />
+                  고객님의 너그러운 이해 부탁 드립니다.
+                </li>
+                <li>
+                  메뉴 주문 시 제공 되는 케찹류나 기타 물품의 경우 기본 제공
+                  수량 기준으로
+                  <br /> 배달하여 드립니다.
+                </li>
+                <li>맥딜리버리의 운영 시간은 매장과 상이할 수 있습니다.</li>
+              </ul>
+            </div>
+          }
+        />
+        <Route path="/mainInfo1" element={<div className="mainInfo1" />} />
+        <Route path="/mainInfo2" element={<div className="mainInfo2" />} />
+        <Route path="/mainInfo3" element={<div className="mainInfo3" />} />
+        <Route path="/mainInfo4" element={<div className="mainInfo4" />} />
+        <Route path="/mainInfo5" element={<div className="mainInfo5" />} />
+        <Route path="/mainInfo6" element={<div className="mainInfo6" />} />
       </Routes>
       <div className="footer">
-        <p>휴먼교육센터<br/>
-        대표자 : 박춘보<br/>
-        대표전화번호 : 1566-9564 <br/>
-        Copyrigthⓒ 2011 휴먼교육센터 All Rights Recerved.<br/>
+        <p>
+          휴먼교육센터 : 6강의실
+          <br />
+          대표자 : 조은결
+          <br />
+          대표전화번호 : 010-1234-5678 <br />
+          Copyrigthⓒ 2011 휴먼교육센터 All Rights Recerved.
+          <br />
         </p>
       </div>
     </div> //최상단 div

@@ -1,14 +1,14 @@
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import axios from 'axios';
+import './component.css';
 
 function BurgerDetail({ burgers }) {
   let navigate = useNavigate();
   let [showPlace, setShowPlace] = useState(false);
   let [showAllergy, setShowAllergy] = useState(false);
   let [showTable, setShowTable] = useState(false);
-  let { id} = useParams();
+  let {id} = useParams();
 
   let bgdetail = burgers.find((data, i) => {
     return data.id == id;
@@ -38,7 +38,6 @@ function BurgerDetail({ burgers }) {
           });
           tempIndex += 1;
           if (tempIndex == 20) {
-            
             alert('다음 상품이 없습니다.');
             return;
           }
@@ -47,7 +46,12 @@ function BurgerDetail({ burgers }) {
         〉
       </button>
       <div>
-        <Card style={{ width: '30%', margin: '0 auto' }}>
+        <Card
+          className="card"
+          style={{
+            width: '30%',
+            margin: '0 auto',
+          }}>
           <Card.Body>
             <Card.Title className="detailTilte">
               <h2>{bgdetail.bName}</h2>
@@ -100,8 +104,6 @@ function BurgerDetail({ burgers }) {
       </div>
     </div>
   );
-
-
   
 function Place({ burgers }) {
   let { id } = useParams();
@@ -155,6 +157,5 @@ function NutritionTable({ burgers }) {
   );
 }
 }
-
 
 export default BurgerDetail;

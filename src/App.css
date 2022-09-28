@@ -12,17 +12,15 @@
   height: 90px;
 }
 
-/* .main4{
-  background-video: url('https://youtu.be/1XDKnRCIFMc');
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 2rem;
-} */
+.mainmenu{
+  border-bottom: 5px solid #ffbc0d;
+  margin: 5px;
+}
+
 .main1{
   background-image: url('../public/image/메인.png');
-  height: 540px;
+  height: 411px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,7 +28,8 @@
 }
 .main2{
   background-image: url('../public/image/메인2.jpg');
-  height: 540px;
+  height: 411px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +37,8 @@
 }
 .main3{
   background-image: url('../public/image/메인3.jpg');
-  height: 540px;
+  height: 411px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -46,7 +46,7 @@
 }
 .burerTypeMain{
   background-image: url(C:\workspace_react\burger\public\image\typemain.jpg);
-  height:200px;
+  height:250px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -64,6 +64,138 @@
   letter-spacing: 2px;
   line-height: 1.7;
   font-family: ROKAF_Medium;
+  font-size: 18px;
+}
+
+.driveImage, .deliveryImage{
+  background-image: url('C:\workspace_react\burger\public\image\store.jpg');
+  width: auto;
+  height:250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.driveTitle, .deliveryTitle{
+  color: white;
+  padding-top: 50px;
+  padding-left: 100px;
+  font-family: ROKAF_Bold;
+  font-size: 30px;
+  text-align: left;
+}
+
+.driveText, .deliveryText{
+  color: white;
+  padding-top: 10px;
+  padding-left: 105px;
+  letter-spacing: 2px;
+  line-height: 1.7;
+  font-size: 20px;
+  font-family: ROKAF_Medium;
+  text-align: left;
+}
+
+.mcDrive{
+  margin:50px auto;
+  /* position: absolute; */
+}
+
+.addr{
+  display: inline-block;  
+  width: 550px;
+  height: 410px;
+  margin: 30px auto;
+  /* margin-left: 84px; */
+  padding: 40px 35px 35px;
+  border:1px solid #ffbc0d;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  /* position: static; */
+  font-family: SUIT-ExtraBold;
+}
+
+input{
+  display: inline-block;
+  margin: 10px;
+  color:black;
+  height: 50px;
+  padding: 0 25px;
+  line-height: 1;
+  border: 1px solid rgb(114, 114, 114);
+  border-radius: 70px;
+  margin-top: 10px;
+  margin-left: 7px;
+  font-family: SUIT-ExtraBold;
+}
+.input1, .input2{
+  width: 450px;
+
+}
+
+.input2{
+  position: relative;
+  top: -75px;
+}
+
+.input3, .input4, .input3_1, .input4_1, .inputText {
+  position: relative;
+  top: -80px;
+}
+
+.input3, .input4{
+  width: 100px;
+}
+
+.addrFind{
+    display: inline;
+    position: relative;
+    margin: 10px;
+    left: 143px;
+    top: -71px;
+    height: 52px;
+    min-width: 160px;
+    padding: 0 35px;
+    font-size: 15px;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 70px;
+    background-color: #ffbc0d;
+    font-family: SUIT-ExtraBold;
+}
+
+.inputText{
+  font-family:SUIT-Variable;
+  text-align: center;
+}
+
+.search{
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: -80px;
+    height: 52px;
+    min-width: 160px;
+    padding: 0 35px;
+    font-size: 15px;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 70px;
+    background-color: #ffbc0d;
+    font-family: SUIT-ExtraBold; 
+}
+.deliveruInfo{
+  display: inline-block;  
+  width: 550px;
+  height: 410px;
+  margin: 30px auto;
+  padding: 40px 35px 35px;
+  left: 20px;
+  top: -44px;
+  border:1px solid #ffbc0d;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  position: relative;
+  font-family: SUIT-ExtraBold;
+  text-align: left;
+  line-height: 2;
 }
 
 .footer{
@@ -72,12 +204,12 @@
   padding-top: 10px;
   width: 100%;
   height: 150px;
-  font-family: SUIT-Variable;
   font-size: 15px;
   background-color: #ffbc0d;
   color: rgb(45, 44, 44);
   line-height: 2;
 }
+
 
 @font-face{
 font-family: "ROKAF_Bold";
@@ -94,3 +226,13 @@ font-family: "SUIT-ExtraBold";
 src: url('./component/SUIT-Variable.ttf');
 }
 
+@font-face{
+font-family: "SUIT-Variable";
+src: url('./component/SUIT-Variable.ttf');
+}
+
+@media only screen and (max-width: 1200px) {
+  .deliveruInfo{
+    left: 0px;
+  }
+}

@@ -1,11 +1,17 @@
 import { Card, CardGroup } from 'react-bootstrap';
-import './component.css';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import './MainInfo.css';
 
-function MainInfo(App) {
+function MainInfo() {
+    let navigate = useNavigate();
   return (
     <div className="maininfo">
       <CardGroup>
-        <Card>
+        <Card
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            navigate('/mainInfo1');
+          }}>
           <Card.Img
             variant="top"
             src={process.env.PUBLIC_URL + 'image/1653467599860.png'}
@@ -18,7 +24,11 @@ function MainInfo(App) {
             </h5>
           </Card.Body>
         </Card>
-        <Card>
+        <Card
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            navigate('/mainInfo2');
+          }}>
           <Card.Img
             variant="top"
             src={process.env.PUBLIC_URL + 'image/1656467182899.jpg'}
@@ -31,7 +41,11 @@ function MainInfo(App) {
             </h5>
           </Card.Body>
         </Card>
-        <Card>
+        <Card
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            navigate('/mainInfo3');
+          }}>
           <Card.Img
             variant="top"
             src={process.env.PUBLIC_URL + 'image/1659512755699.jpg'}
@@ -47,7 +61,11 @@ function MainInfo(App) {
       </CardGroup>
       <br />
       <CardGroup>
-        <Card>
+        <Card
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            navigate('/mainInfo4');
+          }}>
           <Card.Img
             variant="top"
             src={process.env.PUBLIC_URL + 'image/1661337592960.jpg'}
@@ -60,7 +78,11 @@ function MainInfo(App) {
             </h5>
           </Card.Body>
         </Card>
-        <Card>
+        <Card
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            navigate('/mainInfo5');
+          }}>
           <Card.Img
             variant="top"
             src={process.env.PUBLIC_URL + 'image/1662529660303.jpg'}
@@ -73,7 +95,11 @@ function MainInfo(App) {
             </h5>
           </Card.Body>
         </Card>
-        <Card>
+        <Card
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            navigate('/mainInfo6');
+          }}>
           <Card.Img
             variant="top"
             src={process.env.PUBLIC_URL + 'image/1663138164239.jpg'}
@@ -87,7 +113,16 @@ function MainInfo(App) {
           </Card.Body>
         </Card>
       </CardGroup>
+      {/* <Routes>
+        <Route path="/mainInfo1" element={<div className="mainInfo1" />} />
+        <Route path="/mainInfo2" element={<div className="mainInfo2" />} />
+        <Route path="/mainInfo3" element={<div className="mainInfo3" />} />
+        <Route path="/mainInfo4" element={<div className="mainInfo4" />} />
+        <Route path="/mainInfo5" element={<div className="mainInfo5" />} />
+        <Route path="/mainInfo6" element={<div className="mainInfo6" />} />
+      </Routes> */}
     </div>
   );
 }
 export default MainInfo;
+

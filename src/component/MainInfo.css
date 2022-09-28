@@ -1,0 +1,57 @@
+  /* MainInfo */
+.maininfo{
+    margin: 50px;
+    font-family: KOTRA;
+}
+.mainInfo1{
+    margin:0px auto;
+    background-image: url('C:\workspace_react\burger\public\image\1맥크리스피.jpg');
+    height: 9104px;
+    width:1168px;
+    background-repeat: no-repeat;
+}
+
+.mainInfo2{
+    margin:0px auto;
+    background-image: url('C:\workspace_react\burger\public\image\2해피스낵.jpg');
+    height: 7472px;
+    width:1168px;
+    background-repeat: no-repeat;
+}
+
+.mainInfo3{
+    margin:0px auto;
+    background-image: url('C:\workspace_react\burger\public\image\3창녕갈릭.jpg');
+    height: 7961px;
+    width:1168px;
+    background-repeat: no-repeat;
+}
+
+.mainInfo4{
+    margin:0px auto;
+    background-image: url('C:\workspace_react\burger\public\image\4 88서울비프.jpg');
+    height: 10504px;
+    width:1168px;
+    background-repeat: no-repeat;
+}
+
+.mainInfo5{
+    margin:0px auto;
+    background-image: url('C:\workspace_react\burger\public\image\5양배추수급.jpg');
+    height: 1204px;
+    width:1168px;
+    background-repeat: no-repeat;
+}
+
+.mainInfo6{
+    margin:0px auto;
+    background-image: url('C:\workspace_react\burger\public\image\6맥그리들.jpg');
+    height: 5350px;
+    width:1169px;
+    background-repeat: no-repeat;
+}
+
+@font-face{
+font-family: "KOTRA";
+src: url('../component/KOTRA_BOLD.ttf');
+}

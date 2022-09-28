@@ -5,18 +5,18 @@ function BurgerType({ burgers, i, burger }) {
   let navigate = useNavigate();
   return (
     <div>
-      <CardGroup style={{ margin: '10px' }}>
+      <CardGroup className="card" style={{ margin: '10px' }}>
         <Card
-          style={{ width: '18rem', cursor: 'pointer' }}
+          style={{
+            width: '18rem',
+            cursor: 'pointer'
+          }}
           onClick={() => {
             navigate('/burger/detail/' + burger.id);
           }}>
           <Card.Body>
             <Card.Title style={{ padding: '10px' }}>
-              <Card.Img
-                variant="top"
-                src={burgers[i].mImgPath}
-              />
+              <Card.Img variant="top" src={burgers[i].mImgPath} />
             </Card.Title>
             <Card.Text
               style={{
