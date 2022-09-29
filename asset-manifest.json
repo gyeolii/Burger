@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Burger/static/css/main.a984127b.css",
+    "main.js": "/Burger/static/js/main.f39fd2e2.js",
+    "static/js/787.48b80222.chunk.js": "/Burger/static/js/787.48b80222.chunk.js",
+    "static/media/1맥크리스피.jpg": "/Burger/static/media/1맥크리스피.5b10af4c8725693c41e3.jpg",
+    "static/media/4 88서울비프.jpg": "/Burger/static/media/4 88서울비프.d48d3607306ca613f678.jpg",
+    "static/media/2해피스낵.jpg": "/Burger/static/media/2해피스낵.0debc036cf28414f31f2.jpg",
+    "static/media/메인.png": "/Burger/static/media/메인.eb1ec4afb801a6560c46.png",
+    "static/media/3창녕갈릭.jpg": "/Burger/static/media/3창녕갈릭.b93159ebcecc1a3893f3.jpg",
+    "static/media/SUIT-Variable.ttf": "/Burger/static/media/SUIT-Variable.d2971403d3f2702c6b14.ttf",
+    "static/media/6맥그리들.jpg": "/Burger/static/media/6맥그리들.d9dd0b4e1a97ee61813a.jpg",
+    "static/media/ROKAF Sans Medium.ttf": "/Burger/static/media/ROKAF Sans Medium.c1df447b9860393bff6d.ttf",
+    "static/media/ROKAF Sans Bold.ttf": "/Burger/static/media/ROKAF Sans Bold.066b89a862865c152261.ttf",
+    "static/media/KOTRA_BOLD.ttf": "/Burger/static/media/KOTRA_BOLD.24d893ff7fa663e43ab8.ttf",
+    "static/media/메인2.jpg": "/Burger/static/media/메인2.24f5d032119f6a9b0919.jpg",
+    "static/media/SUIT-ExtraBold.ttf": "/Burger/static/media/SUIT-ExtraBold.7da7ed5d3fbaa7302657.ttf",
+    "static/media/store.jpg": "/Burger/static/media/store.bd9c2ef2b2a88954c14d.jpg",
+    "static/media/메인3.jpg": "/Burger/static/media/메인3.f47d833c0f0fa5d249fc.jpg",
+    "static/media/5양배추수급.jpg": "/Burger/static/media/5양배추수급.a251e6fb508dbfa166dc.jpg",
+    "static/media/typemain.jpg": "/Burger/static/media/typemain.f08c2ad45fbcdcd8a662.jpg",
+    "static/media/logo.svg": "/Burger/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Burger/index.html",
+    "main.a984127b.css.map": "/Burger/static/css/main.a984127b.css.map",
+    "main.f39fd2e2.js.map": "/Burger/static/js/main.f39fd2e2.js.map",
+    "787.48b80222.chunk.js.map": "/Burger/static/js/787.48b80222.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a984127b.css",
+    "static/js/main.f39fd2e2.js"
+  ]
+}
