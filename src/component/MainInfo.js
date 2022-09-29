@@ -14,7 +14,7 @@ function MainInfo() {
           }}>
           <Card.Img
             variant="top"
-            src={process.env.PUBLIC_URL + 'image/1653467599860.png'}
+            src={process.env.PUBLIC_URL + '/image/1653467599860.png'}
           />
           <Card.Body>
             <h5>
@@ -31,7 +31,7 @@ function MainInfo() {
           }}>
           <Card.Img
             variant="top"
-            src={process.env.PUBLIC_URL + 'image/1656467182899.jpg'}
+            src={process.env.PUBLIC_URL + '/image/1656467182899.jpg'}
           />
           <Card.Body>
             <h5>
@@ -48,7 +48,7 @@ function MainInfo() {
           }}>
           <Card.Img
             variant="top"
-            src={process.env.PUBLIC_URL + 'image/1659512755699.jpg'}
+            src={process.env.PUBLIC_URL + '/image/1659512755699.jpg'}
           />
           <Card.Body>
             <h5>
@@ -68,7 +68,7 @@ function MainInfo() {
           }}>
           <Card.Img
             variant="top"
-            src={process.env.PUBLIC_URL + 'image/1661337592960.jpg'}
+            src={process.env.PUBLIC_URL + '/image/1661337592960.jpg'}
           />
           <Card.Body>
             <h5>
@@ -85,7 +85,7 @@ function MainInfo() {
           }}>
           <Card.Img
             variant="top"
-            src={process.env.PUBLIC_URL + 'image/1662529660303.jpg'}
+            src={process.env.PUBLIC_URL + '/image/1662529660303.jpg'}
           />
           <Card.Body>
             <h5>
@@ -102,7 +102,7 @@ function MainInfo() {
           }}>
           <Card.Img
             variant="top"
-            src={process.env.PUBLIC_URL + 'image/1663138164239.jpg'}
+            src={process.env.PUBLIC_URL + '/image/1663138164239.jpg'}
           />
           <Card.Body>
             <h5>
@@ -113,14 +113,6 @@ function MainInfo() {
           </Card.Body>
         </Card>
       </CardGroup>
-      {/* <Routes>
-        <Route path="/mainInfo1" element={<div className="mainInfo1" />} />
-        <Route path="/mainInfo2" element={<div className="mainInfo2" />} />
-        <Route path="/mainInfo3" element={<div className="mainInfo3" />} />
-        <Route path="/mainInfo4" element={<div className="mainInfo4" />} />
-        <Route path="/mainInfo5" element={<div className="mainInfo5" />} />
-        <Route path="/mainInfo6" element={<div className="mainInfo6" />} />
-      </Routes> */}
     </div>
   );
 }
