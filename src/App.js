@@ -419,7 +419,7 @@ function App() {
         <div className="main"></div>
         <Navbar bg="light" variant="light">
           <Container>
-            <Navbar.Brand href="/" className="mainLogo"></Navbar.Brand>
+            <Navbar.Brand href={process.env.PUBLIC_URL+"/"} className="mainLogo"></Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link
                 onClick={() => {
